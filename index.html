@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail Finder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container main-container">
+      <div class="header-section">
+        <h1>🍹 Cocktail Finder</h1>
+        <p>Discover amazing cocktail recipes and create your group!</p>
+      </div>
+
+      <div class="search-section">
+        <div class="row">
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control form-control-lg"
+              placeholder="Search for a cocktail..."
+            />
+          </div>
+          <div class="col-md-2">
+            <button id="searchBtn" class="btn btn-primary btn-lg w-100">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div id="loadingDiv" class="loading" style="display: none">Loading drinks...</div>
+          <div id="notFoundDiv" class="not-found" style="display: none">
+            ❌ No drinks found. Try another search!
+          </div>
+          <div id="drinksContainer" class="row"></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="group-section">
+            <h4>My Drink Group <span class="count-badge" id="drinkCount">0</span></h4>
+            <div id="groupList">
+              <p class="text-muted">No drinks added yet. Add up to 7 drinks!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="detailsModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Drink Details</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

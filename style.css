@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  padding: 30px 0;
+}
+.header-section {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.header-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.search-section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.drink-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.drink-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.drink-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.drink-card h5 {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.drink-card .badge {
+  background: #667eea;
+  font-size: 0.85rem;
+}
+.group-section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 20px;
+}
+.group-section h4 {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.group-item {
+  background: #f8f9fa;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #667eea;
+}
+.btn-add-group {
+  background: #667eea;
+  color: white;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn-add-group:hover {
+  background: #5568d3;
+  color: white;
+}
+.btn-details {
+  background: #764ba2;
+  color: white;
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+}
+.btn-details:hover {
+  background: #5f3a82;
+  color: white;
+}
+.not-found {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 50px;
+}
+.loading {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+.modal-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.count-badge {
+  background: #764ba2;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
